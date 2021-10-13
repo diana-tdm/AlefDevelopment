@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alef Development</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__navigation">
+          <a class="header__logo" href="#">
+            <img
+              class="header__logo-img"
+              src="image/header/logo.svg"
+              alt="Logo"
+            />
+          </a>
+          <button class="menu__btn">
+            <span></span>
+          </button>
+          <nav class="header__nav">
+            <ul class="header__menu">
+              <li class="header__li"><a href="#">Main </a></li>
+              <li class="header__li"><a href="#">Gallery </a></li>
+              <li class="header__li"><a href="#">News </a></li>
+              <li class="header__li"><a href="#">Profile</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__call">
+          <a class="header__phone" href="tel:+544349000000">
+            +544 3490 00000
+          </a>
+          <div class="header__text">Звони скорее!</div>
+        </div>
+      </div>
+      <div class="container header__container">
+        <div class="header__search">Найдено 349 котов</div>
+      </div>
+    </header>
+
+    <main class="catalog">
+      <div class="container catalog__container">
+        <div class="search">
+          <label class="search__label">Сортировать по:</label>
+          <div class="search__item">
+            Цене
+            <svg
+              class="search__arrow"
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0)">
+                <path
+                  d="M8.0853 11.6669L14.7604 4.99166C14.9149 4.83727 15 4.63118 15 4.41142C15 4.19167 14.9149 3.98557 14.7604 3.83118L14.2689 3.3396C13.9487 3.01973 13.4282 3.01973 13.1084 3.3396L7.50311 8.94492L1.89157 3.33338C1.73706 3.17899 1.53109 3.09375 1.31146 3.09375C1.09158 3.09375 0.885606 3.17899 0.730973 3.33338L0.239635 3.82496C0.0851249 3.97947 3.76698e-06 4.18545 3.75737e-06 4.4052C3.74777e-06 4.62496 0.0851249 4.83105 0.239635 4.98544L6.9208 11.6669C7.0758 11.8216 7.28275 11.9066 7.50275 11.9061C7.7236 11.9066 7.93042 11.8216 8.0853 11.6669Z"
+                  fill="black"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect
+                    width="15"
+                    height="15"
+                    fill="white"
+                    transform="translate(15) rotate(90)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="search__item">
+            Возрасту
+            <svg
+              class="search__arrow"
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0)">
+                <path
+                  d="M8.0853 11.6669L14.7604 4.99166C14.9149 4.83727 15 4.63118 15 4.41142C15 4.19167 14.9149 3.98557 14.7604 3.83118L14.2689 3.3396C13.9487 3.01973 13.4282 3.01973 13.1084 3.3396L7.50311 8.94492L1.89157 3.33338C1.73706 3.17899 1.53109 3.09375 1.31146 3.09375C1.09158 3.09375 0.885606 3.17899 0.730973 3.33338L0.239635 3.82496C0.0851249 3.97947 3.76698e-06 4.18545 3.75737e-06 4.4052C3.74777e-06 4.62496 0.0851249 4.83105 0.239635 4.98544L6.9208 11.6669C7.0758 11.8216 7.28275 11.9066 7.50275 11.9061C7.7236 11.9066 7.93042 11.8216 8.0853 11.6669Z"
+                  fill="black"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect
+                    width="15"
+                    height="15"
+                    fill="white"
+                    transform="translate(15) rotate(90)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card card--catalog">
+            <div class="card__sale">-40%</div>
+            <div class="card__fav">
+              <img src="image/fav/fav.svg" alt="" />
+            </div>
+            <div>
+              <img class="card__img" src="image/cats/01.jpg" alt="01.jpg" />
+            </div>
+            <div class="card__items">
+              <div class="card__title">Кот полосатый</div>
+              <div class="card__properties">
+                <div class="card__color">Коричневый<br />окрас</div>
+                <div class="card__age">
+                  <div class="card__bold">2 мес.</div>
+                  Возраст
+                </div>
+                <div class="card__number">
+                  <div class="card__bold">4</div>
+                  Кол-во лап
+                </div>
+              </div>
+              <div class="card__price">30 000 руб.</div>
+            </div>
+            <button class="card__button">Купить</button>
+          </div>
+          <div class="card card--catalog">
+            <div class="card__fav card__fav--active">
+              <img src="image/fav/fav.svg" alt="" />
+            </div>
+            <div>
+              <img class="card__img" src="image/cats/02.jpg" alt="01.jpg" />
+            </div>
+            <div class="card__items">
+              <div class="card__title">Кот полосатый</div>
+              <div class="card__properties">
+                <div class="card__color">Коричневый<br />окрас</div>
+                <div class="card__age">
+                  <div class="card__bold">2 мес.</div>
+                  Возраст
+                </div>
+                <div class="card__number">
+                  <div class="card__bold">4</div>
+                  Кол-во лап
+                </div>
+              </div>
+              <div class="card__price">40 000 руб.</div>
+            </div>
+            <button class="card__button card__button--sold">Продан</button>
+          </div>
+          <div class="card card--catalog">
+            <div class="card__fav">
+              <img src="image/fav/fav.svg" alt="fav.svg" />
+            </div>
+            <div>
+              <img class="card__img" src="image/cats/03.jpg" alt="01.jpg" />
+            </div>
+            <div class="card__items">
+              <div class="card__title">Кот полосатый</div>
+              <div class="card__properties">
+                <div class="card__color">Коричневый<br />окрас</div>
+                <div class="card__age">
+                  <div class="card__bold">2 мес.</div>
+                  Возраст
+                </div>
+                <div class="card__number">
+                  <div class="card__bold">4</div>
+                  Кол-во лап
+                </div>
+              </div>
+              <div class="card__price">20 000 руб.</div>
+            </div>
+            <button class="card__button">Купить</button>
+          </div>
+          <div class="card card--catalog">
+            <div class="card__fav">
+              <img src="image/fav/fav.svg" alt="" />
+            </div>
+            <div>
+              <img class="card__img" src="image/cats/04.jpg" alt="01.jpg" />
+            </div>
+            <div class="card__items">
+              <div class="card__title">Кот полосатый</div>
+              <div class="card__properties">
+                <div class="card__color">Коричневый<br />окрас</div>
+                <div class="card__age">
+                  <div class="card__bold">2 мес.</div>
+                  Возраст
+                </div>
+                <div class="card__number">
+                  <div class="card__bold">4</div>
+                  Кол-во лап
+                </div>
+              </div>
+              <div class="card__price">25 000 руб.</div>
+            </div>
+            <button class="card__button">Купить</button>
+          </div>
+          <div class="card card--catalog">
+            <div class="card__sale">-40%</div>
+            <div class="card__fav">
+              <img src="image/fav/fav.svg" alt="" />
+            </div>
+            <div>
+              <img class="card__img" src="image/cats/05.jpg" alt="01.jpg" />
+            </div>
+            <div class="card__items">
+              <div class="card__title">Кот полосатый</div>
+              <div class="card__properties">
+                <div class="card__color">Коричневый<br />окрас</div>
+                <div class="card__age">
+                  <div class="card__bold">2 мес.</div>
+                  Возраст
+                </div>
+                <div class="card__number">
+                  <div class="card__bold">4</div>
+                  Кол-во лап
+                </div>
+              </div>
+              <div class="card__price">30 000 руб.</div>
+            </div>
+            <button class="card__button">Купить</button>
+          </div>
+          <div class="card card--catalog">
+            <div class="card__fav card__fav--active">
+              <img src="image/fav/fav.svg" alt="" />
+            </div>
+            <div>
+              <img class="card__img" src="image/cats/06.jpg" alt="01.jpg" />
+            </div>
+            <div class="card__items">
+              <div class="card__title">Кот полосатый</div>
+              <div class="card__properties">
+                <div class="card__color">Коричневый<br />окрас</div>
+                <div class="card__age">
+                  <div class="card__bold">2 мес.</div>
+                  Возраст
+                </div>
+                <div class="card__number">
+                  <div class="card__bold">4</div>
+                  Кол-во лап
+                </div>
+              </div>
+              <div class="card__price">10 000 руб.</div>
+            </div>
+            <button class="card__button card__button--sold">Продан</button>
+          </div>
+        </div>
+        <div class="more">
+          <button class="more__btn">Показать еще 20</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer container">
+      <div class="footer__text">
+        <div class="footer__title">Успей купить!</div>
+        <div class="footer__subtitle">Подпишись и успей словить все акции</div>
+      </div>
+      <div class="footer__subscription">
+        <div class="footer__inputs">
+          <div class="footer__input-error">
+            <input class="footer__input" type="text" placeholder="Email" />
+            <div class="footer__error footer__error--hide">
+              Введите правильный email
+            </div>
+          </div>
+          <button class="footer__btn">Подписаться</button>
+        </div>
+        <label class="footer__label">
+          <input
+            class="footer__checkbox check__input"
+            type="checkbox"
+            checked
+          />
+          <svg class="check__box" viewBox="0 0 20 20">
+            <rect class="check__focus" width="20" height="20" rx="4" />
+            <rect
+              class="check__square"
+              x="3"
+              y="3"
+              width="14"
+              height="14"
+              rx="2"
+            />
+            <polyline class="check__mark" points="5 9 9 13 15 6" />
+          </svg>
+          Подписаться на новости
+        </label>
+      </div>
+    </footer>
+
+    <button class="button-up button-up--hide">
+      <svg
+        width="26"
+        height="23"
+        viewBox="0 0 26 23"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.2976 3.99939L4.28756 12.0096C4.10215 12.1949 4 12.4422 4 12.7059C4 12.9696 4.10215 13.2169 4.28756 13.4022L4.87731 13.9921C5.2616 14.3759 5.88618 14.3759 6.26988 13.9921L12.9963 7.2657L19.7301 13.9996C19.9155 14.1848 20.1627 14.2871 20.4263 14.2871C20.6901 14.2871 20.9373 14.1848 21.1228 13.9995L21.7124 13.4097C21.8979 13.2242 22 12.9771 22 12.7134C22 12.4497 21.8979 12.2023 21.7124 12.0171L13.695 3.99939C13.509 3.81368 13.2607 3.71168 12.9967 3.71227C12.7317 3.71168 12.4835 3.81368 12.2976 3.99939Z"
+          fill="white"
+        />
+      </svg>
+    </button>
+
+    <div class="modal modal--hide">Добавлено в избранное</div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
